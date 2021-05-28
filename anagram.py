@@ -1,4 +1,6 @@
 def is_anagram(string1, string2):
+    if len(string1) != len(string2):
+        return False
     string1_dict = string_to_dict(string1)
     string2_dict = string_to_dict(string2)
     return string1_dict == string2_dict
